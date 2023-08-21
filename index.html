@@ -169,10 +169,22 @@
                     <p class="font-semibold pb-2">Grand Total : <span id="GrandTotal" class="text-gray-500">00.00</span> <span class="text-gray-500"> TK</span></p>
                 </div>
                 <div class="text-center">
-                    <p  class=" text-white bg-pink-500 mx-2 px-5 py-2 rounded-md">Make Purchase</p>
+                    <button id="PurchaseButton" onclick="showCongrats()" class=" text-white bg-pink-500 mx-2 px-5 py-2 rounded-md" disabled >Make Purchase</button>
                 </div>
             </div>
         </div>
+
+        <div id="customAlert" class=" fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+            <div id="custom-alert-content" class="border border-gray-600 p-20 bg-white  rounded-lg">
+                <img class="  w-auto h-48 p-10 object-cover mx-auto" src="/images/congo.png" alt="River">   
+                <h1 class="text-4xl font-bold ">congratulations</h1>
+                <p class="text-center my-4">You purchased the product</p>
+                <div class="flex justify-center mt-5">
+                    <button id="reloadButton"  class=" text-white bg-pink-500 mx-2 px-5 py-2 rounded-md" >Go Home</button>
+                </div>
+            </div>
+        </div>
+
     </main>
     <script src="selectNcalculate.js"></script>
 
