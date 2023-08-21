@@ -24,22 +24,18 @@ function clickToSelect(name, price) {
     if (TotalPrice.innerText >= 200) {
         // console.log("besi")
         ApplyButton.disabled = false;
+        if (cuponInput.value == "SALL200") {
+            console.log("cupon correct")
+            Discount.innerText = ((20 / 100) * parseFloat(TotalPrice.innerText)).toFixed(2);
+        }
     }
 
 
-    if (cuponInput.value == "SALL200") {
-        console.log("cupon correct")
-        Discount.innerText = ((20 / 100) * parseFloat(TotalPrice.innerText)).toFixed(2);
-    }
-
-
-    // console.log(parseFloat(TotalPrice.innerText) - parseFloat(Discount.innerText))
 
     GrandTotal.innerText = (parseFloat(TotalPrice.innerText) - parseFloat(Discount.innerText)).toFixed(2);
 
     PurchaseButton.disabled = false;
 
-    // btnTag.disabled = true
 
 }
 
