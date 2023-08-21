@@ -35,7 +35,7 @@
                 <h1 class=" text-xl font-bold mb-3">Kitchenewear</h1>
                 <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     <!--Card 1-->
-                    <div class="rounded overflow-hidden shadow-lg bg-white">
+                    <div onclick="clickToSelect('Wood spoon', '35.00' )" class="rounded overflow-hidden shadow-lg bg-white">
                         <div class=" bg-gray-100 m-5">
                             <img class="  w-auto h-48 p-10 object-cover mx-auto" src="/images/prod1.png" alt="Mountain">
                         </div>
@@ -48,11 +48,11 @@
                                 <span class="material-icons star">&#9734;</span> <!-- Empty Star -->
                             </div>
                             <div class="font-bold text-xl mb-2">Wood spoon</div>
-                            <p><span>25.00 </span> TK</p>
+                            <p><span>35.00 </span> TK</p>
                         </div>
                     </div>
                     <!--Card 2-->
-                    <div class="rounded overflow-hidden shadow-lg bg-white">
+                    <div onclick="clickToSelect('Wood board','59.00' )" class="rounded overflow-hidden shadow-lg bg-white">
                         <div class=" bg-gray-100 m-5">
                             <img class="  w-auto h-48 p-10 object-cover mx-auto" src="/images/prod2.png" alt="River">
                         </div>
@@ -65,11 +65,11 @@
                                 <span class="material-icons star">&#9734;</span> <!-- Empty Star -->
                             </div>
                             <div class="font-bold text-xl mb-2">Wood board</div>
-                            <p><span>25.00 </span> TK</p>
+                            <p><span>59.00 </span> TK</p>
                         </div>
                     </div>
                     <!--Card 3-->
-                    <div class="rounded overflow-hidden shadow-lg bg-white">
+                    <div onclick="clickToSelect('Cooker', '45.00')" class="rounded overflow-hidden shadow-lg bg-white">
                         <div class=" bg-gray-100 m-5">
                             <img class="  w-auto h-48 p-10 object-cover mx-auto" src="/images/prod3.png" alt="River">
                         </div>
@@ -82,7 +82,7 @@
                                 <span class="material-icons star">&#9734;</span> <!-- Empty Star -->
                             </div>
                             <div class="font-bold text-xl mb-2">Cooker</div>
-                            <p><span>25.00 </span> TK</p>
+                            <p><span>45.00 </span> TK</p>
                         </div>
                     </div>
                 </div>
@@ -91,8 +91,8 @@
             <div class="py-6">
                 <h1 class=" text-xl font-bold mb-3">Sportswear</h1>
                 <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-                    <!--Card 1-->
-                    <div class="rounded overflow-hidden shadow-lg bg-white">
+                    <!--Card 4-->
+                    <div onclick="clickToSelect('Cap','19.00' )" class="rounded overflow-hidden shadow-lg bg-white">
                         <div class=" bg-gray-100 m-5">
                             <img class="  w-auto h-48 p-10 object-cover mx-auto" src="/images/prod4.png" alt="Mountain">
                         </div>
@@ -105,11 +105,11 @@
                                 <span class="material-icons star">&#9734;</span> <!-- Empty Star -->
                             </div>
                             <div class="font-bold text-xl mb-2">Cap</div>
-                            <p><span>25.00 </span> TK</p>
+                            <p><span>19.00 </span> TK</p>
                         </div>
                     </div>
-                    <!--Card 2-->
-                    <div class="rounded overflow-hidden shadow-lg bg-white">
+                    <!--Card 5-->
+                    <div onclick="clickToSelect('Cloths','35.00' )" class="rounded overflow-hidden shadow-lg bg-white">
                         <div class=" bg-gray-100 m-5">
                             <img class="  w-auto h-48 p-10 object-cover mx-auto" src="/images/prod5.png" alt="River">
                         </div>
@@ -122,11 +122,11 @@
                                 <span class="material-icons star">&#9734;</span> <!-- Empty Star -->
                             </div>
                             <div class="font-bold text-xl mb-2">Cloths</div>
-                            <p><span>25.00 </span> TK</p>
+                            <p><span>35.00 </span> TK</p>
                         </div>
                     </div>
-                    <!--Card 3-->
-                    <div class="rounded overflow-hidden shadow-lg bg-white">
+                    <!--Card 6-->
+                    <div onclick="clickToSelect('Shooes','32.00' )" class="rounded overflow-hidden shadow-lg bg-white">
                         <div class=" bg-gray-100 m-5">
                             <img class="  w-auto h-48 p-10 object-cover mx-auto" src="/images/prod6.png" alt="River">
                         </div>
@@ -139,7 +139,7 @@
                                 <span class="material-icons star">&#9734;</span> <!-- Empty Star -->
                             </div>
                             <div class="font-bold text-xl mb-2">Shooes</div>
-                            <p><span>25.00 </span> TK</p>
+                            <p><span>32.00 </span> TK</p>
                         </div>
                     </div>
                 </div>
@@ -147,8 +147,24 @@
         </div>
         <div class=" md:w-1/3">
             <p>Calculate section</p>
+            <div class="bg-white p-3 w-72">
+                <p>Have Cupon?</p>
+                <div class="mt-3">
+                    <input class=" h-8 border border-gray-300 rounded-sm"/>
+                    <button class="bg-pink-500 px-4 text-white py-1 rounded-sm">Apply</button>
+                </div>
+            </div>
+            <div class="bg-white mt-4 p-3 w-72">
+                <div>
+                    <p>Added Products:</p>
+                    <ul class="m-3" id="selection" >
+                        
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
+    <script src="selectNcalculate.js"></script>
 
 </body>
 
